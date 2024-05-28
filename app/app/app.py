@@ -10,7 +10,7 @@ import keras
 MODEL = tf.keras.models.load_model('models/model.keras')
 CLASS_NAMES = ["Early Blight", "Late Blight", "Normal"]
 st.title("Potato Disease Classification")
-st.logo("static/logo.png")
+st.logo("app/app/static/logo.png")
 imgPath = st.file_uploader("Upload a image", accept_multiple_files=True)
 
 
