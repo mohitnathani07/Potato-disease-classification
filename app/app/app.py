@@ -10,7 +10,7 @@ import keras
 
 
 
-MODEL = tf.keras.models.load_model("model.keras")
+MODEL = tf.keras.models.load_model("model")
 CLASS_NAMES = ["Early Blight", "Late Blight", "Normal"]
 st.title("Potato Disease Classification")
 st.logo("static/logo.png")
