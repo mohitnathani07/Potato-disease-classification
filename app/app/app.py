@@ -3,9 +3,9 @@ from tensorflow.keras.models import load_model
 import numpy as np
 from keras.preprocessing.image import array_to_img, img_to_array, load_img
 from tensorflow.keras.preprocessing import image
-import os
-import math
-import base64
+
+import keras
+
 
 
 modelPath = "model.keras"
