@@ -15,18 +15,6 @@ st.title("Potato Disease Classification")
 st.logo("static/logo.png")
 imgPath = st.file_uploader("Upload a image", accept_multiple_files=True)
 
-page_bg_img = """
-<style>
-body {{
-background-image: url("data:static/potato.jpg");
-background-size: cover;
-}}
-</style>
-"""
-
-# Display the background image
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
 
 placeholder = []
 if imgPath is not None:
