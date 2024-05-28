@@ -8,7 +8,7 @@ import math
 import base64
 
 
-modelPath = "../../models/1.keras"
+modelPath = "model.keras"
 MODEL = load_model(modelPath)
 CLASS_NAMES = ["Early Blight", "Late Blight", "Normal"]
 st.title("Potato Disease Classification")
