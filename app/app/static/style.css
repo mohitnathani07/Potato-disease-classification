@@ -1,0 +1,16 @@
+body {
+
+    background-image: url("bg.jpg");
+    margin: auto;
+  width: 50%;
+
+  padding: 10px;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}

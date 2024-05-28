@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Selector and Action Button</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="centered">
+    <h1>Image Selector and Action Button</h1>
+    <form method="post" action="/upload" enctype="multipart/form-data">
+    <!-- Button to select image from folder -->
+    <input type="file" name="file1" accept="image/*">
+    <br><br>
+
+    <!-- Button to perform an action -->
+    <button id="actionButton">Perform Action</button>
+    <br><br>
+    </form>
+    <!-- Area to display the selected image -->
+    <img id="selectedImage" src="" alt="Selected Image" style="display:none; max-width: 100%; height: auto;">
+    <script src="{{url_for('static', filename='javaFile.js')}}"></script>
+    </div>
+</body>
+</html>
