@@ -3,13 +3,14 @@ from tensorflow.keras.models import load_model
 import numpy as np
 from keras.preprocessing.image import array_to_img, img_to_array, load_img
 from tensorflow.keras.preprocessing import image
+import tensorflow as tf
 
 import keras
 
 
 
-modelPath = "model.keras"
-MODEL = load_model(modelPath)
+
+MODEL = tf.keras.models.load_model("model.keras")
 CLASS_NAMES = ["Early Blight", "Late Blight", "Normal"]
 st.title("Potato Disease Classification")
 st.logo("static/logo.png")
